@@ -1,0 +1,352 @@
+/* ========================================================================== */
+/* ---------------------------- Containers ---------------------------------- */
+/* ========================================================================== */
+
+.Wrapper {
+    font-size: 24px;
+}
+
+.Website {
+    font-family: newFont;
+    font-size: 100px;
+}
+
+.Title {
+    font-family: newFont;
+    font-size: 100px;
+}
+
+.Container {
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+    width: fit-content;
+    height: fit-content;
+    margin: 5%
+}
+
+.HeaderWrapper {
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+    width: fit-content;
+    height: fit-content;
+    margin: 5%;
+    margin-bottom: 100px;
+}
+
+.EmissionSet_info {
+    text-align: center;
+    font-family: descFont;
+    font-size: 30px;
+    border: dotted;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgba(65, 65, 65, 0.1);
+    padding: 10px;
+    margin: 40px;
+}
+
+.EmissionSet_var1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: descFont;
+    padding: 20px;
+}
+
+.EmissionSet_var2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: descFont;
+    padding: 20px;
+}
+
+.var1 {
+    border: solid;
+    border-color: black;
+    float: left;
+    margin: auto;
+}
+
+.var2 {
+    border: solid;
+    border-color: black;
+    float: right;
+    margin: auto;
+}
+
+/* ========================================================================== */
+/* --------------------------- Image Wrappers -------------------------------- */
+/* ========================================================================== */
+
+#img_wrapper1 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/electricity_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper2 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/pollution_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper3 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/oil_barrel_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper4 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/gas_can_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper5 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/house_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper6 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/car_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper7 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/plane_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper8 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/cruise_ship_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper9 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/cargo_ship_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper10 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/oil_tanker_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+#img_wrapper11 {
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background-image: url("/media/images/bulk_carrier_colored.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+/* ========================================================================== */
+/* ---------------------------- Image Hovers -------------------------------- */
+/* ========================================================================== */
+  
+#img_wrapper1 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper1 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper2 > img {
+    vertical-align: top;
+}
+
+#img_wrapper2 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper3 > img {
+    vertical-align: top;
+}
+
+#img_wrapper3 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper4 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper4 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper5 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper5 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper6 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper6 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper7 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper7 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper8 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper8 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper9 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper9 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper10 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper10 > img:hover {
+    opacity: 0;
+}
+
+#img_wrapper11 > img {
+    vertical-align: top;
+}
+  
+#img_wrapper11 > img:hover {
+    opacity: 0;
+}
+
+/* ========================================================================== */
+/* -------------------------------- Text ------------------------------------ */
+/* ========================================================================== */
+
+.Title {
+    text-align: center;
+}
+
+.WebsiteName {
+    text-align: center;
+}
+
+.p_var1 {
+    margin-left: 130px;
+}
+
+.p_var2 {
+    margin-right: 130px;
+}
+
+.number {
+    color: rgb(48, 137, 245);
+    text-decoration: underline;
+}
+
+.Return {
+    text-align: center;
+    font-family: descFont;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+/* ========================================================================== */
+/* ------------------------------- Fonts ------------------------------------ */
+/* ========================================================================== */
+
+@font-face {
+    /* https://www.dafont.com/fort-quinsy.font */
+    font-family: newFont;
+    src: url("../media/fonts/ARTHISTORYBOOK.otf") format("opentype");
+}
+
+@font-face {
+    /* https://www.dafont.com/fort-quinsy.font */
+    font-family: descFont;
+    src: url("../media/fonts/Winkle-Regular.otf") format("opentype");
+}

@@ -1,0 +1,74 @@
+/* ========================================================================== */
+/* ---------------------------- Containers ---------------------------------- */
+/* ========================================================================== */
+
+table {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-family: descFont;
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+    width: 700px;
+}
+
+.Wrapper {
+    width: fit-content;
+    margin: auto;
+}
+
+/* ========================================================================== */
+/* -------------------------------- Text ------------------------------------ */
+/* ========================================================================== */
+
+.Website {
+    border: none;
+}
+
+.WebsiteName {
+    padding-top: 10%;
+    font-family: newFont;
+    font-size: 75px;
+    text-align: center;
+}
+
+.PageInfo {
+    text-align: center;
+    font-family: descFont;
+    font-size: 20px;
+    width: 700px;
+}
+
+.data {
+    font-size: 12px;
+}
+
+.Header {
+    font-size: 40px;
+    font-family: newFont;
+    padding-top: 50px;
+}
+
+.Return {
+    text-align: center;
+    font-family: descFont;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+/* ========================================================================== */
+/* ------------------------------- Fonts ------------------------------------ */
+/* ========================================================================== */
+
+@font-face {
+    /* https://www.dafont.com/fort-quinsy.font */
+    font-family: newFont;
+    src: url("../media/fonts/ARTHISTORYBOOK.otf") format("opentype");
+}
+
+@font-face {
+    /* https://www.dafont.com/fort-quinsy.font */
+    font-family: descFont;
+    src: url("../media/fonts/Winkle-Regular.otf") format("opentype");
+}

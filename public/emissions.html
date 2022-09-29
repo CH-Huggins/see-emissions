@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Emissions</title>
+    <link rel="stylesheet" href="/css/emissions.css">
+</head>
+<body>
+    <div class="container">
+        <p class="title">
+            Enter Your Emissions:
+        </p>
+        <form id="emission" action="/emissions/calculated" method="GET">
+            <label for="emitAmount"></label>
+            <div class="numAndType">
+                <input class="emissionNumber" type="number" name="emission"/>
+                <select class="emissionType" name="type">
+                    <option value="CO2">Metric Tonnes of CO2</option>
+                    <option value="kWh">kWh</option>
+                </select>
+            </div>
+            <div class="submitWrapper">
+                <input class="submit" type="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <p class="scroll">
+            Scroll Down For More Info
+        </p>
+        <div class="infoWrapper">
+            <p class="infoTitle">
+                More Info:
+            </p>
+            <p class="info">
+                Have you ever wondered how much emissions are when mentioned in an
+                article? Far too often do news sites use numbers in esoteric ways
+                that exclude the general population. Well now, you have a place to
+                take those numbers to get more information on them.
+            </p>
+            <p class="info">
+                Here is where you can enter your emissions, either in the units of 
+                tonnes of CO2 or in electricity usage (kWh). These numbers can
+                typically be found in news articles or scientific journals. There
+                are other sources for these numbers, but this is where you will most
+                normally find them.
+            </p>
+            <p class="info">
+                Enter the number you want to research in the text box, and select
+                the form of emissions that you would like to check on. Then click submit
+                and there you go, the emission's comparisons will be provided.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

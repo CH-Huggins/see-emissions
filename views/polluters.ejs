@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polluters</title>
+    <link rel="stylesheet" href="/css/polluters.css">
+</head>
+<body>
+    <div class="Wrapper">
+        <div class="Country">
+            <table class="Website">
+                <caption class="WebsiteName">
+                    See Emissions
+                </caption>
+                <caption class="PageInfo">
+                    Here you can find the top polluters in the world on an
+                    country, corporate, and individual level. Want to see what
+                    these numbers mean? Put them in our emissions calculator to
+                    see just how big their impacts are!
+                </caption>
+            </table>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Emissions (in tonnes of CO2)</th>
+                </tr>
+                <% for (const entry of countryData) { %>
+                    <tr>
+                        <td>
+                            <%= entry.position %>
+                        </td>
+                        <td>
+                            <%= entry.name %>
+                        </td>
+                        <td>
+                            <%= entry.emissions %>
+                        </td>
+                    </tr>
+                <% } %>
+                <caption class="Header">
+                    Top Country Polluters:
+                </caption>
+                <caption class="data">
+                    Data From 2019 - Source: https://climatetrade.com/which-countries-are-the-worlds-biggest-carbon-polluters/
+                </caption>
+            </table>
+        </div>
+        <div class="Corporation">
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Emissions (in tonnes of CO2)</th>
+                </tr>
+                <% for (const entry of corporationData) { %>
+                    <tr>
+                        <td>
+                            <%= entry.position %>
+                        </td>
+                        <td>
+                            <%= entry.name %>
+                        </td>
+                        <td>
+                            <%= entry.emissions %>
+                        </td>
+                    </tr>
+                <% } %>
+                <caption class="Header">
+                    Top Corporation Polluters:
+                </caption>
+                <caption class="data">
+                    Data From 2019 - Source: https://peri.umass.edu/greenhouse-100-polluters-index-current
+                </caption>
+            </table>
+        </div>
+        <div class="Individuals">
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Emissions (in tonnes of CO2)</th>
+                </tr>
+                <% for (const entry of individualData) { %>
+                    <tr>
+                        <td>
+                            <%= entry.position %>
+                        </td>
+                        <td>
+                            <%= entry.name %>
+                        </td>
+                        <td>
+                            <%= entry.emissions %>
+                        </td>
+                    </tr>
+                <% } %>
+                <caption class="Header">
+                    Top Individual Polluters:
+                </caption>
+                <caption class="data">
+                    Data From 2018 - Source: https://www.deccanherald.com/dh-galleries/photos/the-prosperous-polluters-20-billionaires-with-high-carbon-footprint-954406#21
+                </caption>
+            </table>
+        </div>
+    </div>
+    <a class="Return" href="/index.html">Return Home</a>
+</body>
+</html>

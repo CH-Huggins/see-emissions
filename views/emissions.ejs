@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculated Emissions</title>
+    <link rel="stylesheet" href="/css/calcEmissions.css">
+</head>
+<body>
+    <div class="Wrapper">
+        <div class="HeaderWrapper">
+            <div class="Website">
+                <p class="WebsiteName">
+                    See Emissions
+                </p>
+            </div>
+            <div class="Title">
+                <p class="TitleName">
+                    Scroll Down For The Calculations:
+                </p>
+            </div>
+        </div>
+        <div class="Container">
+            <div class="EmissionSet_var1">
+                <div id="img_wrapper1">
+                    <img class="var1" src="/media/images/electricity.png" alt="Elec" width="100" height="100">
+                </div>
+                <p class="p_var1">
+                    When looking at emissions, there are two values that we support.
+                    The first is one in kWh, that being kilowatts per hour. Your
+                    emissions consume a total of <span class="number"><%= data.electricity %></span> kWh. 
+                </p>
+            </div>
+            <div class="EmissionSet_var2">
+                <div id="img_wrapper2">
+                    <img class="var2" src="/media/images/pollution.png" alt="Tonnes" width="100" height="100">
+                </div> 
+                <p  class="p_var2">
+                    The second value supported is tonnes of CO2 emissions. Your
+                    emissions produce a total of <span class="number"><%= data.tonnes %></span> tonnes of CO2.
+                </p>
+            </div>
+            <div class="EmissionSet_info">
+                <p>
+                    One of these two values are often given when discussing
+                    pollution. Electricity consumption is used as it's easy to
+                    say how much electricity something consumes such as crypto.
+                    Tonnes of CO2 are often scientific values given as they tend to
+                    be tracked. So you are more likely to find an electricity
+                    consumption value in a news article, whereas you're more likely
+                    to find the emissions in scientific journals.
+                </p>
+            </div>
+            <div class="EmissionSet_var2">
+                <div id="img_wrapper3">
+                    <img class="var2" src="/media/images/oil_barrel.png" alt="Oil" width="100" height="100">
+                </div>
+                <p class="p_var2">
+                    Your emissions is equivalent to a total of <span class="number"><%= data.barrelsOfOil %></span>
+                    barrels of oil. Meaning, this many barrels of oil would need
+                    to be burned in order to produce your amount of emissions.
+                </p>
+            </div>
+            <div class="EmissionSet_var1">
+                <div id="img_wrapper4">
+                    <img class="var1" src="/media/images/gas_can.png" alt="Gas" width="100" height="100">
+                </div>
+                <p  class="p_var1">
+                    A total of <span class="number"><%= data.gallonsOfGas %></span> gallons of gas would need to
+                    be burned in order to produce your amount of emissions. For
+                    simplicity sakes, it is safe to be assume this is your standard
+                    gallon of gas, nothing specific like premium or another kind.
+                </p>
+            </div>
+            <div class="EmissionSet_var2">
+                <div id="img_wrapper5">
+                    <img class="var2" src="/media/images/house.png" alt="Houses" width="100" height="100">
+                </div>
+                <p  class="p_var2">
+                    The average household produces 7.5 tonnes of CO2 in a year. A 
+                    total of <span class="number"><%= data.houses %></span> houses would be equivalent to the 
+                    given emissions. Meaning, the emissions produced would be equivalent
+                    to <span class="number"><%= data.houses %></span> houses a year.
+                </p>
+            </div>
+            <div class="EmissionSet_var1">
+                <div id="img_wrapper6">
+                    <img class="var1" src="/media/images/car.png" alt="Cars" width="100" height="100">
+                </div>
+                <p  class="p_var1">
+                    The average car produces 4.6 tonnes of CO2 in a year. Thus, given
+                    your emissions, a total of <span class="number"><%= data.cars %></span> cars would need to
+                    be driven every year to equate to your emissions. 
+                </p>
+            </div>
+            <div class="EmissionSet_var1">
+                <div id="img_wrapper7">
+                    <img class="var1" src="/media/images/plane.png" alt="Planes" width="100" height="100">
+                </div>
+                <p  class="p_var1">
+                    Your emissions equate to <span class="number"><%= data.planes %></span> planes being flown a
+                    year. For plane data, we used model 737 planes' emissions and
+                    took their average lifetime and travel distance and divided the
+                    distance by the lifetime.
+                </p>
+            </div>
+            <div class="EmissionSet_var2">
+                <div id="img_wrapper8">
+                    <img class="var2" src="/media/images/cruise_ship.png" alt="Cruise" width="100" height="100">
+                </div>
+                <p  class="p_var2">
+                    If you were to take your emissions and compare them to cruise
+                    ships, it would take <span class="number"><%= data.cruiseShips %></span> cruise ships to
+                    pollute a similar amount. Imagine how many family vacations that
+                    amounts to!
+                </p>
+            </div>
+            <div class="EmissionSet_var1">
+                <div id="img_wrapper9">
+                    <img class="var1" src="/media/images/cargo_ship.png" alt="Container" width="100" height="100">
+                </div>
+                <p class="p_var1">
+                    Given your emissions, a total number of 
+                    <span class="number"><%= data.containerShips %></span>
+                    container ships pollute the same amount. Unsure about the
+                    difference between a container ship and a bulk carrier? Think of
+                    Madagascar, the movie. The ship they were on was a container ship.
+                </p>
+            </div>
+            <div class="EmissionSet_var2">
+                <div id="img_wrapper10">
+                    <img class="var2" src="/media/images/oil_tanker.png" alt="Tankers" width="100" height="100">
+                </div>
+                <p class="p_var2">
+                    An oil tanker is a ship that transports mass amounts of oil from
+                    one place to another. They are one of the largest polluters when
+                    it comes to vehicular travel. Your emissions equate to a total of
+                    <span class="number"><%= data.oilTankers %></span> oil tankers.
+                </p>
+            </div>
+            <div class="EmissionSet_info">
+                <p>
+                    Interesting Fact: 
+                </p>
+                <p>
+                    Bulk carriers are the largest vehicle polluters in the world. 
+                    While they pollute less individually, they totalled a huge
+                    440 million metric tons of CO2 emissions in 2020.
+                </p>
+            </div>
+            <div class="EmissionSet_var1">
+                <div id="img_wrapper11">
+                    <img class="var1" src="/media/images/bulk_carrier.png" alt="Carriers" width="100" height="100">
+                </div>
+                <p class="p_var1">
+                    As mentioned, bulk carrier are a lot like container ships, but 
+                    they transport loose items. This can be things such as coal or
+                    metal. Your emissions equate to a total of <span class="number"><%= data.bulkCarriers %></span>
+                    bulk carrier ships.
+                </p>
+            </div>
+        </div>
+    <a class="Return" href="/index.html">Return Home</a>
+    </div>
+</body>
+</html>

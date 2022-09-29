@@ -1,0 +1,148 @@
+/* ========================================================================== */
+/* ---------------------------- Containers ---------------------------------- */
+/* ========================================================================== */
+
+/* Number and Type Wrapper */
+.numAndType {
+    background-color: rgba(255, 255, 255, .8);
+    margin: auto;
+    border: solid;
+    border-color: #92abb0;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+/* Submission Button Container */
+.submitWrapper {
+    text-align: center;
+    margin: auto;
+}
+
+.infoWrapper {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid;
+    border-color: #000000;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+/* Page Container */
+.container {
+    padding-left: 20%;
+    padding-top: 8%;
+    width: fit-content;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+/* ========================================================================== */
+/* -------------------------------- Text ------------------------------------ */
+/* ========================================================================== */
+
+.title {
+    color: black;
+    font-size: 100px;
+    margin: auto;
+    margin-bottom: 0%;
+    width: 700px;
+    text-align: center;
+    font-family: newFont;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.scroll {
+    color: black;
+    font-size: 50px;
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 50px;
+    width: 700px;
+    text-align: center;
+    font-family: newFont;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    color: black;
+    font-size: 24px;
+    margin: auto;
+    padding: 20px;
+    width: 700px;
+    text-align: center;
+    font-family: descFont;
+}
+
+.infoTitle {
+    color: black;
+    font-size: 50px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 700px;
+    text-align: center;
+    font-family: newFont;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================================================== */
+/* ----------------------------- Form Stuff --------------------------------- */
+/* ========================================================================== */
+
+/* Emission Number Input */
+.emissionNumber {
+    border-radius: 10px;
+    width: 72%;
+    border: none;
+    font-family: descFont;
+    font-size: 40px;
+}
+
+/* Emission Select */
+.emissionType {
+    float: right;
+    width: 25%;
+    max-height: fit-content;
+    border: none;
+    background-color: #f1f1f1;
+    font-family: descFont;
+    font-size: 40px;
+}
+
+/* Submission Button */
+.submit {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-color: #000000;
+    border: solid;
+    color: rgb(0, 0, 0);
+    padding: 16px 16px;
+    cursor: pointer;
+    font-family: descFont;
+    font-size: 40px;
+}
+
+/* Removes Arrows on Number Input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ========================================================================== */
+/* ------------------------------- Fonts ------------------------------------ */
+/* ========================================================================== */
+
+@font-face {
+    /* https://www.dafont.com/fort-quinsy.font */
+    font-family: newFont;
+    src: url("../media/fonts/ARTHISTORYBOOK.otf") format("opentype");
+}
+
+@font-face {
+    /* https://www.dafont.com/fort-quinsy.font */
+    font-family: descFont;
+    src: url("../media/fonts/Winkle-Regular.otf") format("opentype");
+}
